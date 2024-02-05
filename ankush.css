@@ -1,0 +1,94 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 300px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+.modal[data-type] {
+    display: block;
+}
+
+.modalDialog {
+    height: 300px;
+    width: 700px;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+#modelmessage{
+    text-align: center;
+}
+
+.grantButtons,
+.rewardButtons {
+    display: none;
+}
+
+.modal[data-type="grant"] .grantButtons,
+.modal[data-type="reward"] .rewardButtons {
+    display: block;
+}
+
+.modal input[type="button"] {
+    padding: 0.5rem;
+    background: blue;
+    border: none;
+    border-radius: 4px;
+    margin: 4px;
+    color: white;
+}
+
+.style_btn{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding:0 20px;
+    border: 2px solid;
+    border-color: rgb(215, 4, 4);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.style_btn .text_container{
+    line-height: 25px;
+}
+
+.style_btn .text_container h5{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+}
+
+#noRewardButton {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    /* Add other styles as needed */
+}
+.modalMessage{
+    width: 300px;
+    height: 80px;
+   
+    text-align: center;
+    margin: auto;
+}
+.modalMessage p{
+    font-size: 15px;
+    line-height: normal;
+}
